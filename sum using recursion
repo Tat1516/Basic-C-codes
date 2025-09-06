@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int sum(int n){
+    
+    if(n==0){
+        return 0;
+    }else{
+        
+    return n+sum(n-1);
+    }
+}
+int main()
+{
+    
+    
+    int a;
+    printf("Enter your Value: ");
+    scanf("%d",&a);
+    
+  
+    
+    int q = sum(a);
+    
+    printf("sum = %d",q);
+
+    return 0;
+}
