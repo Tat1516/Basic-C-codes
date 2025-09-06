@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+int main()
+{
+	char op;
+	float a,b,r;
+
+	printf("what you want to do +,-,*,/:");
+	       scanf(" %c",&op);
+
+	       printf("enter 2 values: ");
+	       scanf("%f %f",&a,&b);
+
+	switch(op) {
+case '+':
+	r = a+b;
+	printf("Answer :%f",r);
+		break;
+
+	case '-':
+		r = a-b;
+		printf("Answer :%f",r);
+		break;
+
+	case '*':
+		r = a*b;
+		printf("Answer :%f",r);
+		break;
+
+	case '/':
+	
+	if(b!=0){
+		r = a/b;
+		printf("Answer :%f",r);
+		break;
+	}else{
+	    printf("Divide not possible");
+	    break;
+	}
+
+	default:
+		printf("error");
+		break;
+	}
+	return 0;
+}
