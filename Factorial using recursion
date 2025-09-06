@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int fac(int n){
+    
+    if(n==0 || n==1){
+        return 1;
+    }else{
+        
+    return n*fac(n-1);
+    }
+}
+int main()
+{
+    
+    
+    int a;
+    printf("Enter your Value: ");
+    scanf("%d",&a);
+    
+  
+    
+    int q = fac(a);
+    
+    printf("factorial = %d",q);
+
+    return 0;
+}
